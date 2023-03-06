@@ -16,9 +16,9 @@ release = '1.0.0'
 
 extensions = []
 
-intersphinx_mapping = {
-    'sphinx': ('https://www.sphinx-doc.org/en/master/', None)
-}
+#intersphinx_mapping = {
+ #   'sphinx': ('https://www.sphinx-doc.org/en/master/', None)
+#}
 
 plantweb_defaults = {"format": "png"}
 
@@ -33,4 +33,5 @@ language = 'pt_BR'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'renku'
+html_theme_path = ["."]
