@@ -12,9 +12,10 @@ Welcome to Professional Services's documentation!
 
    pages/intro
 
-Indices and tables
+
+==================
+Índice de Procura
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

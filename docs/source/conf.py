@@ -10,6 +10,7 @@ project = 'Professional Services'
 copyright = '2023, ProServ'
 author = 'ProServ'
 release = '1.0.0'
+language = 'pt_BR'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
