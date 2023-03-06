@@ -6,15 +6,6 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-import glob
-import os
-import sys
-from os.path import abspath, join, dirname
-from pathlib import Path
-
-sys.path.insert(0, abspath(join(dirname(__file__))))
-sys.path.append(abspath(join(dirname(__file__), "renku-python/docs/_ext")))
-
 project = 'Professional Services'
 copyright = '2023, ProServ'
 author = 'ProServ'
@@ -40,14 +31,3 @@ language = 'pt_BR'
 
 html_theme = 'renku'
 
-html_theme_options = {
-    "logo_only": True,
-    "display_version": True,
-    "prev_next_buttons_location": "bottom",
-    "style_external_links": False,
-    "collapse_navigation": True,
-    "sticky_navigation": True,
-    "navigation_depth": 4,
-    "includehidden": True,
-    "titles_only": False,
-}
