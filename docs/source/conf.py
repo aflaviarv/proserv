@@ -25,5 +25,5 @@ language = 'pt_BR'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 import sphinx_pdj_theme
-html_theme = 'sphinx_pdj_theme'
+html_theme = 'karma_sphinx_theme'
 html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
