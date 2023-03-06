@@ -14,7 +14,11 @@ release = '1.0.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['karma_sphinx_theme']
+extensions = []
+
+intersphinx_mapping = {
+    'sphinx': ('https://www.sphinx-doc.org/en/master/', None)
+}
 
 plantweb_defaults = {"format": "png"}
 
@@ -28,3 +32,5 @@ language = 'pt_BR'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+
+html_theme = 'renku'
