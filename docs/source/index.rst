@@ -1,5 +1,5 @@
 .. Professional Services documentation master file, created by
-   sphinx-quickstart on Mon Mar  6 13:05:08 2023.
+   sphinx-quickstart on Mon Mar  6 13:23:39 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -7,14 +7,12 @@ Welcome to Professional Services's documentation!
 =================================================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Contents:
 
    pages/intro
 
-
-==================
-Índice de Procura
+Indices and tables
 ==================
 
 * :ref:`genindex`
