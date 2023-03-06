@@ -10,10 +10,10 @@ Welcome to ProServ's documentation!
    :maxdepth: 3
    :caption: Contents:
 
-   pages/Introdução
+   pages/intro
 
 
 Indices and tables
 ==================
 
-* :ref:`Introdução`
+* :ref:`intro`
