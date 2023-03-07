@@ -11,7 +11,6 @@ Bem vindo a CPS - Central Professional Services
 
 Neste repositório traremos tudo referente a organização e produção de documentoss que gerem valor de entrega durante seu projeto. 
 
-
 =============================================================
 
 .. toctree::
@@ -26,5 +25,6 @@ Neste repositório traremos tudo referente a organização e produção de docum
 
 
 Dados Importantes
------------------
-* Contato: proserv@darede.com.br
+==================
+
+* :ref:`proserv@darede.com.br`
