@@ -21,8 +21,7 @@ Exemplos
 
 Imagine que uma empresa está migrando sua infraestrutura para a nuvem da AWS e decidiu utilizar o serviço de Control Tower AWS para gerenciar suas contas e recursos em conformidade com as práticas recomendadas de segurança, conformidade e governança. Sabendo que o Control Tower AWS ajuda as empresas a provisionar novas contas da AWS e a gerenciar políticas e configurações de forma consistente em todas as contas, um primeiro entregável que trará valor ao projeto que será proposto ao cliente seria uma análise de infraestrutura inicial, onde são trazidos dados cruciais como:
 
-**Arquitetura Inicial: Traz informações sobre como os recursos da AWS serão organizados e como eles interagirão entre si para suportar o aplicativo ou sistema. Isso pode incluir detalhes sobre como os servidores, banco de dados, armazenamento, rede e outros recursos da AWS serão configurados e como eles se comunicarão entre si.
-Além disso, uma arquitetura inicial na AWS pode incluir detalhes sobre como o aplicativo ou sistema será implantado, como as atualizações de software serão gerenciadas e como as falhas serão tratadas.**
+**Arquitetura Inicial: Traz informações sobre como os recursos da AWS serão organizados e como eles interagirão entre si para suportar o aplicativo ou sistema. Isso pode incluir detalhes sobre como os servidores, banco de dados, armazenamento, rede e outros recursos da AWS serão configurados e como eles se comunicarão entre si. Além disso, uma arquitetura inicial na AWS pode incluir detalhes sobre como o aplicativo ou sistema será implantado, como as atualizações de software serão gerenciadas e como as falhas serão tratadas.**
 
 .. image:: /images/arqui.png
 
