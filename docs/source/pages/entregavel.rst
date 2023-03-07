@@ -21,12 +21,12 @@ Exemplos
 
 Imagine que uma empresa está migrando sua infraestrutura para a nuvem da AWS e decidiu utilizar o serviço de Control Tower AWS para gerenciar suas contas e recursos em conformidade com as práticas recomendadas de segurança, conformidade e governança. Sabendo que o Control Tower AWS ajuda as empresas a provisionar novas contas da AWS e a gerenciar políticas e configurações de forma consistente em todas as contas, um primeiro entregável que trará valor ao projeto que será proposto ao cliente seria uma análise de infraestrutura inicial, onde são trazidos dados cruciais como:
 
-* Arquitetura Inicial: Traz informações sobre como os recursos da AWS serão organizados e como eles interagirão entre si para suportar o aplicativo ou sistema. Isso pode incluir detalhes sobre como os servidores, banco de dados, armazenamento, rede e outros recursos da AWS serão configurados e como eles se comunicarão entre si.
-Além disso, uma arquitetura inicial na AWS pode incluir detalhes sobre como o aplicativo ou sistema será implantado, como as atualizações de software serão gerenciadas e como as falhas serão tratadas.
+**Arquitetura Inicial: Traz informações sobre como os recursos da AWS serão organizados e como eles interagirão entre si para suportar o aplicativo ou sistema. Isso pode incluir detalhes sobre como os servidores, banco de dados, armazenamento, rede e outros recursos da AWS serão configurados e como eles se comunicarão entre si.
+Além disso, uma arquitetura inicial na AWS pode incluir detalhes sobre como o aplicativo ou sistema será implantado, como as atualizações de software serão gerenciadas e como as falhas serão tratadas.**
 
 .. image:: /images/arqui.png
 
-* Relatório Trimestral de Custo e Uso: O relatório de custo e uso da AWS fornece informações detalhadas sobre como os serviços da AWS estão sendo usados e quanto está sendo gasto em cada serviço. Ele inclui informações sobre as instâncias EC2, bancos de dados RDS, armazenamento S3, serviços de rede e outros serviços da AWS. O relatório pode ser personalizado para atender às necessidades específicas da empresa, com opções para filtrar dados por região, tipo de instância ou serviço, além de permitir que os usuários visualizem os custos em diferentes formatos de relatório, incluindo CSV e parquet.
+**Relatório Trimestral de Custo e Uso: O relatório de custo e uso da AWS fornece informações detalhadas sobre como os serviços da AWS estão sendo usados e quanto está sendo gasto em cada serviço. Ele inclui informações sobre as instâncias EC2, bancos de dados RDS, armazenamento S3, serviços de rede e outros serviços da AWS. O relatório pode ser personalizado para atender às necessidades específicas da empresa, com opções para filtrar dados por região, tipo de instância ou serviço, além de permitir que os usuários visualizem os custos em diferentes formatos de relatório, incluindo CSV e parquet.**
 
 .. image:: /images/cost.png
 
