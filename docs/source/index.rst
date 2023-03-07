@@ -9,7 +9,7 @@ Bem vindo a CPS - Central Professional Services
 .. image:: /images/proserv.png
    :alt: Logo do Professional Services.
 
-Neste repositório traremos todas tudo referente a organização e produção de documentoss que gerem valor de entrega durante seu projeto. Podendo ser em formato: 
+Neste repositório traremos tudo referente a organização e produção de documentoss que gerem valor de entrega durante seu projeto. Podendo ser em formato: 
 
 * PDF 
 * XLSL 
