@@ -24,9 +24,7 @@ Neste repositório traremos tudo referente a organização e produção de docum
 
 =============================================================
 
-.. toctree::
-   :caption: Contato:
 
-   proserv@darede.com.br
-
-=============================================================
+Dados Importantes
+-----------------
+* Contato: proserv@darede.com.br
