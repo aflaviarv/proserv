@@ -9,7 +9,11 @@ Bem vindo a CPS - Central Professional Services
 .. image:: /images/proserv.png
    :alt: Logo do Professional Services.
 
-Neste repositório traremos tudo referente a organização e produção de documentoss que gerem valor de entrega durante seu projeto. 
+Neste repositório traremos todas tudo referente a organização e produção de documentoss que gerem valor de entrega durante seu projeto. Podendo ser em formato: 
+
+* PDF 
+* XLSL 
+* DOCX
 
 =============================================================
 
@@ -27,6 +31,4 @@ Neste repositório traremos tudo referente a organização e produção de docum
 Dados Importantes
 ==================
 
-* :ref:`genindex`
-* :ref:`search`
 * Contato: proserv@darede.com.br
