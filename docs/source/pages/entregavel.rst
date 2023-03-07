@@ -29,3 +29,14 @@ Além disso, uma arquitetura inicial na AWS pode incluir detalhes sobre como o a
 * Relatório Trimestral de Custo e Uso: O relatório de custo e uso da AWS fornece informações detalhadas sobre como os serviços da AWS estão sendo usados e quanto está sendo gasto em cada serviço. Ele inclui informações sobre as instâncias EC2, bancos de dados RDS, armazenamento S3, serviços de rede e outros serviços da AWS. O relatório pode ser personalizado para atender às necessidades específicas da empresa, com opções para filtrar dados por região, tipo de instância ou serviço, além de permitir que os usuários visualizem os custos em diferentes formatos de relatório, incluindo CSV e parquet.
 
 .. image:: /images/cost.png
+
+* Etapas de Implementação: As etapas de implementação em um projeto de AWS podem variar dependendo da natureza do projeto, mas em geral, as etapas comuns incluem
+    #. Implementação de aplicativos e serviços: nesta etapa, os aplicativos e serviços necessários para o projeto são implementados na AWS, utilizando tecnologias como Elastic Beanstalk, Lambda, API Gateway, entre outras.
+
+    #. Integração e testes: nesta etapa, as diferentes partes do projeto são integradas e testadas, para garantir que tudo esteja funcionando corretamente e de acordo com as especificações.
+
+    #. Migração de dados: se o projeto envolver a migração de dados de um ambiente existente para a AWS, esta etapa envolverá a transferência de dados para a nuvem e a verificação de que tudo foi migrado corretamente.
+
+    #. Monitoramento e otimização: após a implementação, é importante monitorar os recursos da AWS para garantir que tudo esteja funcionando corretamente e otimizar o desempenho e a eficiência do sistema.
+
+    #. Documentação e treinamento: finalmente, é importante documentar o projeto e fornecer treinamento para a equipe responsável pelo suporte e manutenção da solução na AWS.     
