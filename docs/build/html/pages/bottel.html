@@ -198,9 +198,50 @@
 <ul class="simple">
 <li><p>Criar um “IAM role” para usarmos no lambda com as seguintes permissões:</p></li>
 </ul>
-<img alt="Permissões" src="../_images/versin.png" />
-<ol class="loweralpha simple">
-<li><p>Crie uma policy com o json</p></li>
+<ol class="loweralpha">
+<li><dl>
+<dt>Crie uma policy com o json</dt><dd><blockquote>
+<div><p>{</p>
+</div></blockquote>
+<p>“Version”: “2012-10-17”,
+“Statement”: [</p>
+<blockquote>
+<div><dl class="simple">
+<dt>{</dt><dd><p>“Sid”: “VisualEditor0”,
+“Effect”: “Allow”,
+“Action”: “secretsmanager:GetSecretValue”,
+“Resource”: “*”</p>
+</dd>
+</dl>
+<p>},
+{</p>
+<blockquote>
+<div><p>“Sid”: “VisualEditor1”,
+“Effect”: “Allow”,
+“Action”: [</p>
+<blockquote>
+<div><p>“logs:CreateLogStream”,
+“sns:Publish”,
+“logs:CreateLogGroup”,
+“logs:PutLogEvents”</p>
+</div></blockquote>
+<p>],
+“Resource”: [</p>
+<blockquote>
+<div><p>“arn:aws:logs:<em>:</em>:<em>”,
+“arn:aws:sns:</em>:<em>:</em>”</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<dl class="simple">
+<dt>}</dt><dd><p>]</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+</dd>
+</dl>
+</li>
 <li><p>Criar IAM role como serviço para o Lambda e colocar a politica nova.</p></li>
 </ol>
 <ul>
