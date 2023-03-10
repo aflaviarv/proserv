@@ -24,6 +24,7 @@ Neste repositório traremos todas tudo referente a organização e produção de
    pages/intro
    pages/entregavel
    pages/projetos
+   pages/bottel
 
 
 =============================================================

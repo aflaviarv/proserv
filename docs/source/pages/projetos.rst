@@ -19,6 +19,7 @@ Ao criar um projeto na AWS, é possível definir políticas de segurança, confi
 
 A seguir, apresentaremos projetos desenvolvidos pela própria equipe de Professional Services da Darede para melhorar e facilitar atividades, sejam elas repetitivas ou do dia a dia.
 
+=============================
 .. toctree::
    :maxdepth: 2
    :caption: Projetos:
