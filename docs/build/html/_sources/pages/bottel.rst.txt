@@ -33,11 +33,11 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 
 * Criar um "IAM role" para usarmos no lambda com as seguintes permissões:
 
-	a) Crie uma policy com o json:
-    .. image:: /images/versin.png
-        :alt: Permissões
+a) Crie uma policy com o json:
+.. image:: /images/versin.png
+    :alt: Permissões
 	
-	b) Criar IAM role como serviço para o Lambda e colocar a politica nova.
+b) Criar IAM role como serviço para o Lambda e colocar a politica nova.
 	
 
 * SNS criar um Topic com o nome que desejar. (Standard)

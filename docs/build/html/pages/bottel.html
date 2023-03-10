@@ -195,16 +195,22 @@
 </li>
 </ul>
 <p>Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat que o BOT vai enviar a mensagem.</p>
-<ul>
-<li><p>Criar um “IAM role” para usarmos no lambda com as seguintes permissões:</p>
+<ul class="simple">
+<li><p>Criar um “IAM role” para usarmos no lambda com as seguintes permissões:</p></li>
+</ul>
+<p>a) Crie uma policy com o json:
+.. image:: /images/versin.png</p>
 <blockquote>
-<div><blockquote>
-<div><ol class="loweralpha simple">
-<li><p>Crie uma policy com o json:</p></li>
+<div><dl class="field-list simple">
+<dt class="field-odd">alt</dt>
+<dd class="field-odd"><p>Permissões</p>
+</dd>
+</dl>
+</div></blockquote>
+<ol class="loweralpha simple" start="2">
+<li><p>Criar IAM role como serviço para o Lambda e colocar a politica nova.</p></li>
 </ol>
-</div></blockquote>
-</div></blockquote>
-</li>
+<ul>
 <li><p>SNS criar um Topic com o nome que desejar. (Standard)</p></li>
 <li><p>Lambda(Author from scratch).</p>
 <blockquote>
