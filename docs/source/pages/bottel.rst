@@ -35,7 +35,8 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 
 	a) Crie uma policy com o json:
 	
-.. images:: /images/versin.png
+.. image:: /images/versin.png
+    :alt: Permissões
 	
 	b) Criar IAM role como serviço para o Lambda e colocar a politica nova.
 	
@@ -64,17 +65,18 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 	
 * Agora é só testar o código usando um json de alarme:
 
-    .. images:: /images/alarm.png
+    .. image:: /images/alarm.png
+        :alt: JSON de Alarme
 
 * Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!
 
 Dessa forma, você pode ter as seguintes notificações em seu Telegram.
 
-.. images:: /images/primeiraformachat.png
+.. image:: /images/primeiraformachat.png
     :alt: Primeira Situação
 
-.. images:: /images/segundaformachat.png    
+.. image:: /images/segundaformachat.png    
     :alt: Segunda Situação
 
-.. images:: /images/terceiraformachat.png  
+.. image:: /images/terceiraformachat.png  
     :alt: Terceira Situação  
