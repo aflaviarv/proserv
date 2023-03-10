@@ -1,0 +1,385 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Bot de CloudWatch no Telegram &mdash; documentação Professional Services 1.0.0</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Buscar" href="../search.html" />
+    <link rel="prev" title="Projetos" href="projetos.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Professional Services
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Conteúdo:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Intro ao Proserv</a></li>
+<li class="toctree-l1"><a class="reference internal" href="entregavel.html">Entregáveis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projetos.html">Projetos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bot de CloudWatch no Telegram</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#objetivo">Objetivo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#passo-a-passo">Passo a Passo</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Professional Services</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+<div class="git-ribbon">
+  <a href="http://github.com/SwissDataScienceCenter" rel="me">Join us on GitHub</a>
+</div>
+
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Bot de CloudWatch no Telegram</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/pages/bottel.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bot-de-cloudwatch-no-telegram">
+<h1>Bot de CloudWatch no Telegram<a class="headerlink" href="#bot-de-cloudwatch-no-telegram" title="Link permanente para este título">¶</a></h1>
+<div class="section" id="objetivo">
+<h2>Objetivo<a class="headerlink" href="#objetivo" title="Link permanente para este título">¶</a></h2>
+<p>Na intenção de dinamizar a disponibilidade de acesso a informações importantes de logs que são fornecidas pelo AWS CloudWatch, esse bot traz as infos por meio do canal de comunicação Telegram.</p>
+</div>
+<div class="section" id="passo-a-passo">
+<h2>Passo a Passo<a class="headerlink" href="#passo-a-passo" title="Link permanente para este título">¶</a></h2>
+<ul>
+<li><p>Criar o Token do BOT do telegram:</p>
+<blockquote>
+<div><p>Seguir os passos do site oficial do telegram:</p>
+<blockquote>
+<div><p><a class="reference external" href="https://core.telegram.org/bots/features#botfather">https://core.telegram.org/bots/features#botfather</a></p>
+</div></blockquote>
+<p>Com o Token Criado, criar um grupo ou caso queira que o bot retorne as mensagens para o seu número de celular, mande uma mensagem para o bot ou no grupo.</p>
+<p>Essa mensagem vai gerar um ID e esse ID você vai pegar usando a url abaixo no navegador:</p>
+<p><a class="reference external" href="https://api.telegram.org/bot123456789789:TOKEN-DO-BOT/GetUpdates">https://api.telegram.org/bot123456789789:TOKEN-DO-BOT/GetUpdates</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">Response:</span>&#160;&#160;&#160;&#160; <span class="pre">&quot;message&quot;:{&quot;message_id&quot;:62,&quot;from&quot;:{&quot;id&quot;:198XXXXXX,&quot;is_bot&quot;:false,</span></code></p>
+<p>Vai puxar algo parecido com isso e você tem que pegar o ID do <code class="docutils literal notranslate"><span class="pre">&quot;from&quot;:{&quot;id&quot;:19817XXXXX,</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Exemplo</span> <span class="pre">de</span> <span class="pre">ID</span> <span class="pre">-&gt;</span> <span class="pre">19817XXXXX</span></code></p>
+</div></blockquote>
+</li>
+</ul>
+<p>Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat que o BOT vai enviar a mensagem.</p>
+<ul>
+<li><p>Criar um “IAM role” para usarmos no lambda com as seguintes permissões:</p>
+<blockquote>
+<div><blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Crie uma policy com o json:</p></li>
+</ol>
+</div></blockquote>
+<p>Exemplo -&gt; <a href="#id1"><span class="problematic" id="id2">``</span></a>{
+“Version”: “2012-10-17”,
+“Statement”: [</p>
+<blockquote>
+<div><dl class="simple">
+<dt>{</dt><dd><p>“Sid”: “VisualEditor0”,
+“Effect”: “Allow”,
+“Action”: “secretsmanager:GetSecretValue”,
+“Resource”: “*”</p>
+</dd>
+</dl>
+<p>},
+{</p>
+<blockquote>
+<div><p>“Sid”: “VisualEditor1”,
+“Effect”: “Allow”,
+“Action”: [</p>
+<blockquote>
+<div><p>“logs:CreateLogStream”,
+“sns:Publish”,
+“logs:CreateLogGroup”,
+“logs:PutLogEvents”</p>
+</div></blockquote>
+<p>],
+“Resource”: [</p>
+<blockquote>
+<div><p>“arn:aws:logs:<em>:</em>:<em>”,
+“arn:aws:sns:</em>:<em>:</em>”</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>]
+}``</p>
+<blockquote>
+<div><ol class="loweralpha simple" start="2">
+<li><p>Criar IAM role como serviço para o Lambda e colocar a politica nova.</p></li>
+</ol>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p>SNS criar um Topic com o nome que desejar. (Standard)</p></li>
+<li><p>Lambda(Author from scratch).</p>
+<blockquote>
+<div><ol class="loweralpha">
+<li><p>Crie a função com o nome que desejar;</p></li>
+<li><p>Use python 3.9;</p></li>
+<li><p>Associar o IAM Role que criamos;</p></li>
+<li><p>Dentro da função você vai fazer o upload do telegram-alarm.zip</p></li>
+<li><p>Vá em Configuration e crie uma trigger apontando para o SNS que criou.</p></li>
+<li><p>Em configuration do lambda coloque uma variavel de ambiente como:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">Key:</span> <span class="pre">TELEGRAM_CHAT_ID</span> <span class="pre">|</span> <span class="pre">Value:</span> <span class="pre">o</span> <span class="pre">número</span> <span class="pre">do</span> <span class="pre">chat</span> <span class="pre">Id</span> <span class="pre">que</span> <span class="pre">pegamos</span> <span class="pre">no</span> <span class="pre">começo.</span></code></p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Secrets Manager:</p>
+<blockquote>
+<div><ol class="loweralpha">
+<li><p>Store a new secret (Guardar novo segredo)</p></li>
+<li><p>Selecione o tipo como: Outro tipo de segredo (API key, OAuth token, other.):</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Coloque:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">Key/Value:TELEGRAM_BOT_TOKEN</span> <span class="pre">|</span> <span class="pre">Plaintext:</span> <span class="pre">TOKEN</span> <span class="pre">DO</span> <span class="pre">SEU</span> <span class="pre">BOT!</span></code></p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Agora é só testar o código usando um json de alarme:</p>
+<blockquote>
+<div><blockquote>
+<div><p>Exemplo -&gt; <a href="#id3"><span class="problematic" id="id4">``</span></a>{
+“AlarmName”: “teste-telegram”,
+“AlarmDescription”: null,
+“AWSAccountId”: “99999999999999”,
+“AlarmConfigurationUpdatedTimestamp”: “2023-03-06T17:06:31.446+0000”,
+“NewStateValue”: “ALARM”,
+“NewStateReason”: “Threshold Crossed: 1 out of the last 1 datapoints [0.33574153327928674 (06/03/23 17:03:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK -&gt; ALARM transition).”,
+“StateChangeTime”: “2023-03-06T17:09:40.215+0000”,
+“Region”: “US East (Ohio)”,
+“AlarmArn”: “arn:aws:cloudwatch:us-east-2:99999999999999:alarm:teste-telegram”,
+“OldStateValue”: “OK”,
+“AlarmDescription”: “Texto de exemplo de descrição”,
+“OKActions”: [],
+“AlarmActions”: [</p>
+<blockquote>
+<div><p>“arn:aws:sns:us-east-2:99999999999999:sns-telegram-teste”</p>
+</div></blockquote>
+<p>],
+“InsufficientDataActions”: [],
+“Trigger”: {</p>
+<blockquote>
+<div><p>“MetricName”: “CPUUtilization”,
+“Namespace”: “AWS/EC2”,
+“StatisticType”: “Statistic”,
+“Statistic”: “AVERAGE”,
+“Unit”: null,
+“Dimensions”: [</p>
+<blockquote>
+<div><dl class="simple">
+<dt>{</dt><dd><p>“value”: “i-0b670cc48c15a9514”,
+“name”: “InstanceId”</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>],
+“Period”: 60,
+“EvaluationPeriods”: 1,
+“DatapointsToAlarm”: 1,
+“ComparisonOperator”: “GreaterThanThreshold”,
+“Threshold”: 0.0,
+“TreatMissingData”: “missing”,
+“EvaluateLowSampleCountPercentile”: “”</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>}``</p>
+</div></blockquote>
+</li>
+<li><p>Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!</p></li>
+</ul>
+<p>Dessa forma, você pode ter as seguintes notificações em seu Telegram.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="projetos.html" class="btn btn-neutral float-left" title="Projetos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2023, ProServ.
+
+    </p>
+  </div>
+    
+    
+    
+    Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
