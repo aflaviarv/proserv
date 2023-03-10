@@ -59,7 +59,7 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
             ]
         }
     ]
-    }``
+}``
 	
 	b) Criar IAM role como serviço para o Lambda e colocar a politica nova.
 	
@@ -89,43 +89,43 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 * Agora é só testar o código usando um json de alarme:
 
         ``{
-        "AlarmName": "teste-telegram",
-        "AlarmDescription": null,
-        "AWSAccountId": "99999999999999",
-        "AlarmConfigurationUpdatedTimestamp": "2023-03-06T17:06:31.446+0000",
-        "NewStateValue": "ALARM",
-        "NewStateReason": "Threshold Crossed: 1 out of the last 1 datapoints [0.33574153327928674 (06/03/23 17:03:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK -> ALARM transition).",
-        "StateChangeTime": "2023-03-06T17:09:40.215+0000",
-        "Region": "US East (Ohio)",
-        "AlarmArn": "arn:aws:cloudwatch:us-east-2:99999999999999:alarm:teste-telegram",
-        "OldStateValue": "OK",
-        "AlarmDescription": "Texto de exemplo de descrição",
-        "OKActions": [],
-        "AlarmActions": [
-            "arn:aws:sns:us-east-2:99999999999999:sns-telegram-teste"
+    "AlarmName": "teste-telegram",
+    "AlarmDescription": null,
+    "AWSAccountId": "99999999999999",
+    "AlarmConfigurationUpdatedTimestamp": "2023-03-06T17:06:31.446+0000",
+    "NewStateValue": "ALARM",
+    "NewStateReason": "Threshold Crossed: 1 out of the last 1 datapoints [0.33574153327928674 (06/03/23 17:03:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK -> ALARM transition).",
+    "StateChangeTime": "2023-03-06T17:09:40.215+0000",
+    "Region": "US East (Ohio)",
+    "AlarmArn": "arn:aws:cloudwatch:us-east-2:99999999999999:alarm:teste-telegram",
+    "OldStateValue": "OK",
+    "AlarmDescription": "Texto de exemplo de descrição",
+    "OKActions": [],
+    "AlarmActions": [
+        "arn:aws:sns:us-east-2:99999999999999:sns-telegram-teste"
+    ],
+    "InsufficientDataActions": [],
+    "Trigger": {
+        "MetricName": "CPUUtilization",
+        "Namespace": "AWS/EC2",
+        "StatisticType": "Statistic",
+        "Statistic": "AVERAGE",
+        "Unit": null,
+        "Dimensions": [
+            {
+                "value": "i-0b670cc48c15a9514",
+                "name": "InstanceId"
+            }
         ],
-        "InsufficientDataActions": [],
-        "Trigger": {
-            "MetricName": "CPUUtilization",
-            "Namespace": "AWS/EC2",
-            "StatisticType": "Statistic",
-            "Statistic": "AVERAGE",
-            "Unit": null,
-            "Dimensions": [
-                {
-                    "value": "i-0b670cc48c15a9514",
-                    "name": "InstanceId"
-                }
-            ],
-            "Period": 60,
-            "EvaluationPeriods": 1,
-            "DatapointsToAlarm": 1,
-            "ComparisonOperator": "GreaterThanThreshold",
-            "Threshold": 0.0,
-            "TreatMissingData": "missing",
-            "EvaluateLowSampleCountPercentile": ""
-        }
-    }``
+        "Period": 60,
+        "EvaluationPeriods": 1,
+        "DatapointsToAlarm": 1,
+        "ComparisonOperator": "GreaterThanThreshold",
+        "Threshold": 0.0,
+        "TreatMissingData": "missing",
+        "EvaluateLowSampleCountPercentile": ""
+    }
+}``
 
 * Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!
 

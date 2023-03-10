@@ -236,17 +236,19 @@
 </div></blockquote>
 <p>}</p>
 </div></blockquote>
-<p>]
-}``</p>
+<p>]</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ul>
+<p>}``</p>
 <blockquote>
 <div><ol class="loweralpha simple" start="2">
 <li><p>Criar IAM role como serviço para o Lambda e colocar a politica nova.</p></li>
 </ol>
 </div></blockquote>
-</dd>
-</dl>
-</div></blockquote>
-</li>
+<ul>
 <li><p>SNS criar um Topic com o nome que desejar. (Standard)</p></li>
 <li><p>Lambda(Author from scratch).</p>
 <blockquote>
@@ -282,8 +284,9 @@
 <li><p>Agora é só testar o código usando um json de alarme:</p>
 <blockquote>
 <div><blockquote>
-<div><p><a href="#id3"><span class="problematic" id="id4">``</span></a>{
-“AlarmName”: “teste-telegram”,
+<div><p><a href="#id3"><span class="problematic" id="id4">``</span></a>{</p>
+</div></blockquote>
+<p>“AlarmName”: “teste-telegram”,
 “AlarmDescription”: null,
 “AWSAccountId”: “99999999999999”,
 “AlarmConfigurationUpdatedTimestamp”: “2023-03-06T17:06:31.446+0000”,
@@ -328,9 +331,10 @@
 </div></blockquote>
 <p>}</p>
 </div></blockquote>
-<p>}``</p>
-</div></blockquote>
 </li>
+</ul>
+<p>}``</p>
+<ul class="simple">
 <li><p>Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!</p></li>
 </ul>
 <p>Dessa forma, você pode ter as seguintes notificações em seu Telegram.</p>
