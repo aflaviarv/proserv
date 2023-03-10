@@ -132,7 +132,10 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 Dessa forma, você pode ter as seguintes notificações em seu Telegram.
 
 .. images:: /images/primeiraformachat.png
+    :alt: Primeira Situação
 
 .. images:: /images/segundaformachat.png    
+    :alt: Segunda Situação
 
-.. images:: /images/terceiraformachat.png    
+.. images:: /images/terceiraformachat.png  
+    :alt: Terceira Situação  
