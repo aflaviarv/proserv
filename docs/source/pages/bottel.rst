@@ -128,3 +128,11 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 }``
 
 7 - Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!
+
+Dessa forma, você pode ter as seguintes notificações em seu Telegram.
+
+.. images:: /images/primeiraformachat.png
+
+.. images:: /images/segundaformachat.png    
+
+.. images:: /images/terceiraformachat.png    
