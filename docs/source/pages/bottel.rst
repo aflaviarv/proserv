@@ -94,16 +94,14 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
     "AWSAccountId": "99999999999999",
     "AlarmConfigurationUpdatedTimestamp": "2023-03-06T17:06:31.446+0000",
     "NewStateValue": "ALARM",
-    "NewStateReason": "Threshold Crossed: 1 out of the last 1 datapoints [0.33574153327928674 (06/03/23 17:03:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK -> ALARM transition).",
+    "NewStateReason": "Threshold Crossed: 1 out of the last 1 datapoints [0.33574153327928674 (06/03/23 17:03:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK -> ALARM transition)."
     "StateChangeTime": "2023-03-06T17:09:40.215+0000",
     "Region": "US East (Ohio)",
     "AlarmArn": "arn:aws:cloudwatch:us-east-2:99999999999999:alarm:teste-telegram",
     "OldStateValue": "OK",
     "AlarmDescription": "Texto de exemplo de descrição",
     "OKActions": [],
-    "AlarmActions": [
-        "arn:aws:sns:us-east-2:99999999999999:sns-telegram-teste"
-    ],
+    "AlarmActions": ["arn:aws:sns:us-east-2:99999999999999:sns-telegram-teste"],
     "InsufficientDataActions": [],
     "Trigger": {
         "MetricName": "CPUUtilization",
