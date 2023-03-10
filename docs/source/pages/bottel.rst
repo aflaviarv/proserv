@@ -35,7 +35,7 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 
 	a) Crie uma policy com o json:
 	
-Exemplo -> ``{
+    Exemplo -> ``{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -59,7 +59,7 @@ Exemplo -> ``{
             ]
         }
     ]
-}``
+    }``
 	
 	b) Criar IAM role como serviço para o Lambda e colocar a politica nova.
 	
