@@ -33,7 +33,7 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 
 * Criar um "IAM role" para usarmos no lambda com as seguintes permissões:
 
-a) Crie uma policy com o json:
+* Crie uma policy com o json:
 
 .. image:: /images/versin.png
     :alt: Permissões
