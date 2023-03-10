@@ -198,56 +198,12 @@
 <ul>
 <li><p>Criar um “IAM role” para usarmos no lambda com as seguintes permissões:</p>
 <blockquote>
-<div><blockquote>
 <div><ol class="loweralpha simple">
 <li><p>Crie uma policy com o json:</p></li>
 </ol>
 </div></blockquote>
-<dl>
-<dt><a href="#id1"><span class="problematic" id="id2">``</span></a>{</dt><dd><p>“Version”: “2012-10-17”,
-“Statement”: [</p>
-<blockquote>
-<div><dl class="simple">
-<dt>{</dt><dd><p>“Sid”: “VisualEditor0”,
-“Effect”: “Allow”,
-“Action”: “secretsmanager:GetSecretValue”,
-“Resource”: “*”</p>
-</dd>
-</dl>
-<p>},
-{</p>
-<blockquote>
-<div><p>“Sid”: “VisualEditor1”,
-“Effect”: “Allow”,
-“Action”: [</p>
-<blockquote>
-<div><p>“logs:CreateLogStream”,
-“sns:Publish”,
-“logs:CreateLogGroup”,
-“logs:PutLogEvents”</p>
-</div></blockquote>
-<p>],
-“Resource”: [</p>
-<blockquote>
-<div><p>“arn:aws:logs:<em>:</em>:<em>”,
-“arn:aws:sns:</em>:<em>:</em>”</p>
-</div></blockquote>
-<p>]</p>
-</div></blockquote>
-<p>}</p>
-</div></blockquote>
-<p>]</p>
-</dd>
-</dl>
-</div></blockquote>
 </li>
 </ul>
-<p>}``</p>
-<blockquote>
-<div><ol class="loweralpha simple" start="2">
-<li><p>Criar IAM role como serviço para o Lambda e colocar a politica nova.</p></li>
-</ol>
-</div></blockquote>
 <ul>
 <li><p>SNS criar um Topic com o nome que desejar. (Standard)</p></li>
 <li><p>Lambda(Author from scratch).</p>
@@ -283,54 +239,13 @@
 </li>
 <li><p>Agora é só testar o código usando um json de alarme:</p>
 <blockquote>
-<div><blockquote>
-<div><p><a href="#id3"><span class="problematic" id="id4">``</span></a>{</p>
-</div></blockquote>
-<p>“AlarmName”: “teste-telegram”,
-“AlarmDescription”: null,
-“AWSAccountId”: “99999999999999”,
-“AlarmConfigurationUpdatedTimestamp”: “2023-03-06T17:06:31.446+0000”,
-“NewStateValue”: “ALARM”,
-“NewStateReason”: “Threshold Crossed: 1 out of the last 1 datapoints [0.33574153327928674 (06/03/23 17:03:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK -&gt; ALARM transition).”
-“StateChangeTime”: “2023-03-06T17:09:40.215+0000”,
-“Region”: “US East (Ohio)”,
-“AlarmArn”: “arn:aws:cloudwatch:us-east-2:99999999999999:alarm:teste-telegram”,
-“OldStateValue”: “OK”,
-“AlarmDescription”: “Texto de exemplo de descrição”,
-“OKActions”: [],
-“AlarmActions”: [“arn:aws:sns:us-east-2:99999999999999:sns-telegram-teste”],
-“InsufficientDataActions”: [],
-“Trigger”: {</p>
-<blockquote>
-<div><p>“MetricName”: “CPUUtilization”,
-“Namespace”: “AWS/EC2”,
-“StatisticType”: “Statistic”,
-“Statistic”: “AVERAGE”,
-“Unit”: null,
-“Dimensions”: [</p>
-<blockquote>
-<div><dl class="simple">
-<dt>{</dt><dd><p>“value”: “i-0b670cc48c15a9514”,
-“name”: “InstanceId”</p>
+<div><dl class="field-list simple">
+<dt class="field-odd">alt</dt>
+<dd class="field-odd"><p>JSON de Alarme</p>
 </dd>
 </dl>
-<p>}</p>
-</div></blockquote>
-<p>],
-“Period”: 60,
-“EvaluationPeriods”: 1,
-“DatapointsToAlarm”: 1,
-“ComparisonOperator”: “GreaterThanThreshold”,
-“Threshold”: 0.0,
-“TreatMissingData”: “missing”,
-“EvaluateLowSampleCountPercentile”: “”</p>
-</div></blockquote>
-<p>}</p>
 </div></blockquote>
 </li>
-</ul>
-<p>}``</p>
-<ul class="simple">
 <li><p>Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!</p></li>
 </ul>
 <p>Dessa forma, você pode ter as seguintes notificações em seu Telegram.</p>
