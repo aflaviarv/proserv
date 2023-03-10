@@ -43,6 +43,7 @@ a) Crie uma policy com o json
             "Action": "secretsmanager:GetSecretValue",
             "Resource": "*"
         },
+		
         {
             "Sid": "VisualEditor1",
             "Effect": "Allow",
