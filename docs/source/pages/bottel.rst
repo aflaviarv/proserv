@@ -35,7 +35,7 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 
 	a) Crie uma policy com o json:
 	
-    Exemplo -> ``{
+   ``{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -88,7 +88,7 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 	
 * Agora é só testar o código usando um json de alarme:
 
-        Exemplo -> ``{
+        ``{
         "AlarmName": "teste-telegram",
         "AlarmDescription": null,
         "AWSAccountId": "99999999999999",

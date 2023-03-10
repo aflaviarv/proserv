@@ -16,3 +16,19 @@ Dentro da evolução tecnologica que temos atualmente, o Professional Services p
 Os recursos podem ser agrupados em uma região ou em várias regiões, dependendo da necessidade do projeto. Por exemplo, um projeto de aplicativo web pode incluir um servidor EC2 para hospedar o aplicativo, um bucket S3 para armazenar arquivos estáticos, um banco de dados RDS para armazenar dados do usuário e uma função Lambda para processar eventos.
 
 Ao criar um projeto na AWS, é possível definir políticas de segurança, configurar redes virtuais, monitorar recursos e gerenciar permissões de acesso. É importante planejar cuidadosamente o projeto e escolher as ferramentas e serviços adequados para atender às necessidades do negócio.
+
+A seguir, apresentaremos projetos desenvolvidos pela própria equipe de Professional Services da Darede para melhorar e facilitar atividades, sejam elas repetitivas ou do dia a dia.
+
+=============================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Conteúdo:
+
+   pages/intro
+   pages/entregavel
+   pages/projetos
+   pages/bottel
+
+
+============================================================= 
