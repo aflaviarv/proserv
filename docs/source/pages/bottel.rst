@@ -8,7 +8,7 @@ Na intenção de dinamizar a disponibilidade de acesso a informações important
 
 Passo a Passo
 -------------
-1 - Criar o Token do BOT do telegram:
+#. Criar o Token do BOT do telegram:
 
 	Seguir os passos do site oficial do telegram:
 	
@@ -31,11 +31,11 @@ Passo a Passo
 Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat que o BOT vai enviar a mensagem.
 	
 
-2 - Criar um "IAM role" para usarmos no lambda com as seguintes permissões:
+#. Criar um "IAM role" para usarmos no lambda com as seguintes permissões:
 
-	A - Crie uma policy com o json:
+	* Crie uma policy com o json:
 	
-``Exemplo -> 	{
+Exemplo -> ``{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -61,34 +61,34 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
     ]
 }``
 	
-	B - Criar IAM role como serviço para o Lambda e colocar a politica nova.
+	* Criar IAM role como serviço para o Lambda e colocar a politica nova.
 	
 
-3 - SNS criar um Topic com o nome que desejar. (Standard)
+#. SNS criar um Topic com o nome que desejar. (Standard)
 
 		
-4 - Lambda(Author from scratch).
+#. Lambda(Author from scratch).
 	
-	A - Crie a função com o nome que desejar; 
-	B - Use python 3.9;
-	C - Associar o IAM Role que criamos;
-	D - Dentro da função você vai fazer o upload do telegram-alarm.zip
-	E - Vá em Configuration e crie uma trigger apontando para o SNS que criou.
-	F - Em configuration do lambda coloque uma variavel de ambiente como:
+	* Crie a função com o nome que desejar; 
+	* Use python 3.9;
+	* Associar o IAM Role que criamos;
+	* Dentro da função você vai fazer o upload do telegram-alarm.zip
+	* Vá em Configuration e crie uma trigger apontando para o SNS que criou.
+	* Em configuration do lambda coloque uma variavel de ambiente como:
 		
 		``Key: TELEGRAM_CHAT_ID | Value: o número do chat Id que pegamos no começo.``
 		
-5 - Secrets Manager:
+#. Secrets Manager:
 	
-	A - Store a new secret (Guardar novo segredo) 
-	B - Selecione o tipo como: Outro tipo de segredo (API key, OAuth token, other.):
+	* Store a new secret (Guardar novo segredo) 
+	* Selecione o tipo como: Outro tipo de segredo (API key, OAuth token, other.):
 	
 		Coloque: 
 			``Key/Value:TELEGRAM_BOT_TOKEN | Plaintext: TOKEN DO SEU BOT!``
 	
-6 - Agora é só testar o código usando um json de alarme:
+#. Agora é só testar o código usando um json de alarme:
 
-	``Exemplo -> 	{
+	Exemplo -> ``{
     "AlarmName": "teste-telegram",
     "AlarmDescription": null,
     "AWSAccountId": "99999999999999",
@@ -127,7 +127,7 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
     }
 }``
 
-7 - Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!
+#. Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!
 
 Dessa forma, você pode ter as seguintes notificações em seu Telegram.
 
