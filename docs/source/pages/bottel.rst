@@ -34,7 +34,32 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 * Criar um "IAM role" para usarmos no lambda com as seguintes permissões:
 
 a) Crie uma policy com o json	
-	
+	{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "secretsmanager:GetSecretValue",
+            "Resource": "*"
+        },
+		
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "sns:Publish",
+                "logs:CreateLogGroup",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:*:*:*",
+                "arn:aws:sns:*:*:*"
+            ]
+        }
+    			]
+	}
 
 b) Criar IAM role como serviço para o Lambda e colocar a politica nova.
 	
