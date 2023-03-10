@@ -8,7 +8,7 @@ Na intenção de dinamizar a disponibilidade de acesso a informações important
 
 Passo a Passo
 -------------
-#. Criar o Token do BOT do telegram:
+* Criar o Token do BOT do telegram:
 
 	Seguir os passos do site oficial do telegram:
 	
@@ -31,7 +31,7 @@ Passo a Passo
 Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat que o BOT vai enviar a mensagem.
 	
 
-#. Criar um "IAM role" para usarmos no lambda com as seguintes permissões:
+* Criar um "IAM role" para usarmos no lambda com as seguintes permissões:
 
 	* Crie uma policy com o json:
 	
@@ -64,10 +64,10 @@ Exemplo -> ``{
 	* Criar IAM role como serviço para o Lambda e colocar a politica nova.
 	
 
-#. SNS criar um Topic com o nome que desejar. (Standard)
+* SNS criar um Topic com o nome que desejar. (Standard)
 
 		
-#. Lambda(Author from scratch).
+* Lambda(Author from scratch).
 	
 	* Crie a função com o nome que desejar; 
 	* Use python 3.9;
@@ -78,7 +78,7 @@ Exemplo -> ``{
 		
 		``Key: TELEGRAM_CHAT_ID | Value: o número do chat Id que pegamos no começo.``
 		
-#. Secrets Manager:
+* Secrets Manager:
 	
 	* Store a new secret (Guardar novo segredo) 
 	* Selecione o tipo como: Outro tipo de segredo (API key, OAuth token, other.):
@@ -86,7 +86,7 @@ Exemplo -> ``{
 		Coloque: 
 			``Key/Value:TELEGRAM_BOT_TOKEN | Plaintext: TOKEN DO SEU BOT!``
 	
-#. Agora é só testar o código usando um json de alarme:
+* Agora é só testar o código usando um json de alarme:
 
 	Exemplo -> ``{
     "AlarmName": "teste-telegram",
@@ -127,7 +127,7 @@ Exemplo -> ``{
     }
 }``
 
-#. Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!
+* Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!
 
 Dessa forma, você pode ter as seguintes notificações em seu Telegram.
 
