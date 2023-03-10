@@ -33,7 +33,7 @@ Esse é o ID que vamos usar no código na linha: 41, é o ID do grupo ou chat qu
 
 * Criar um "IAM role" para usarmos no lambda com as seguintes permissões:
 
-	* Crie uma policy com o json:
+	a) Crie uma policy com o json:
 	
 Exemplo -> ``{
     "Version": "2012-10-17",
@@ -61,7 +61,7 @@ Exemplo -> ``{
     ]
 }``
 	
-	* Criar IAM role como serviço para o Lambda e colocar a politica nova.
+	b) Criar IAM role como serviço para o Lambda e colocar a politica nova.
 	
 
 * SNS criar um Topic com o nome que desejar. (Standard)
@@ -69,19 +69,19 @@ Exemplo -> ``{
 		
 * Lambda(Author from scratch).
 	
-	* Crie a função com o nome que desejar; 
-	* Use python 3.9;
-	* Associar o IAM Role que criamos;
-	* Dentro da função você vai fazer o upload do telegram-alarm.zip
-	* Vá em Configuration e crie uma trigger apontando para o SNS que criou.
-	* Em configuration do lambda coloque uma variavel de ambiente como:
+	a) Crie a função com o nome que desejar; 
+	b) Use python 3.9;
+	c) Associar o IAM Role que criamos;
+	d) Dentro da função você vai fazer o upload do telegram-alarm.zip
+	e) Vá em Configuration e crie uma trigger apontando para o SNS que criou.
+	f) Em configuration do lambda coloque uma variavel de ambiente como:
 		
 		``Key: TELEGRAM_CHAT_ID | Value: o número do chat Id que pegamos no começo.``
 		
 * Secrets Manager:
 	
-	* Store a new secret (Guardar novo segredo) 
-	* Selecione o tipo como: Outro tipo de segredo (API key, OAuth token, other.):
+	a) Store a new secret (Guardar novo segredo) 
+	b) Selecione o tipo como: Outro tipo de segredo (API key, OAuth token, other.):
 	
 		Coloque: 
 			``Key/Value:TELEGRAM_BOT_TOKEN | Plaintext: TOKEN DO SEU BOT!``
