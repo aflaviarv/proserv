@@ -17,18 +17,3 @@ Os recursos podem ser agrupados em uma região ou em várias regiões, dependend
 
 Ao criar um projeto na AWS, é possível definir políticas de segurança, configurar redes virtuais, monitorar recursos e gerenciar permissões de acesso. É importante planejar cuidadosamente o projeto e escolher as ferramentas e serviços adequados para atender às necessidades do negócio.
 
-A seguir, apresentaremos projetos desenvolvidos pela própria equipe de Professional Services da Darede para melhorar e facilitar atividades, sejam elas repetitivas ou do dia a dia.
-
-=============================================================
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Conteúdo:
-
-   pages/intro
-   pages/entregavel
-   pages/projetos
-   pages/bottel
-
-
-============================================================= 
