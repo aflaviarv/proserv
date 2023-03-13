@@ -103,6 +103,5 @@ Dessa forma, você pode ter as seguintes notificações em seu Telegram.
     :alt: Segunda Situação
 
 .. image:: /images/terceiraformachat.png  
-    :alt: Terceira Situação  
-
+    :alt: Terceira Situação 
     
