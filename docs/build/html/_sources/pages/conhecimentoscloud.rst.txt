@@ -12,5 +12,6 @@ AWS, ou Amazon Web Services, é uma plataforma de serviços em nuvem oferecida p
 
    cloudfoundation
    cloudsecurity
+   appstream
 
 
