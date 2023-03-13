@@ -17,4 +17,4 @@ Os recursos podem ser agrupados em uma região ou em várias regiões, dependend
 
 Ao criar um projeto na AWS, é possível definir políticas de segurança, configurar redes virtuais, monitorar recursos e gerenciar permissões de acesso. É importante planejar cuidadosamente o projeto e escolher as ferramentas e serviços adequados para atender às necessidades do negócio.
 
-.. bottel:
+Documento de `Bot de Telegram <<bottel.rst>>` para mais infos.
