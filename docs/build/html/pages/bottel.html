@@ -44,6 +44,7 @@
     
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Buscar" href="../search.html" />
+    <link rel="next" title="Conhecimentos Cloud" href="conhecimentoscloud.html" />
     <link rel="prev" title="Projetos" href="projetos.html" /> 
 </head>
 
@@ -104,11 +105,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Bot de CloudWatch no Telegram</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#objetivo">Objetivo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#passo-a-passo">Passo a Passo</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="conhecimentoscloud.html">Conhecimentos Cloud</a></li>
 </ul>
 
             
@@ -210,50 +207,9 @@
 <ul class="simple">
 <li><p>Criar um “IAM role” para usarmos no lambda com as seguintes permissões:</p></li>
 </ul>
-<ol class="loweralpha">
-<li><dl>
-<dt>Crie uma policy com o json</dt><dd><blockquote>
-<div><p>{</p>
-</div></blockquote>
-<p>“Version”: “2012-10-17”,
-“Statement”: [</p>
-<blockquote>
-<div><dl class="simple">
-<dt>{</dt><dd><p>“Sid”: “VisualEditor0”,
-“Effect”: “Allow”,
-“Action”: “secretsmanager:GetSecretValue”,
-“Resource”: “*”</p>
-</dd>
-</dl>
-<p>},</p>
-<dl>
-<dt>{</dt><dd><p>“Sid”: “VisualEditor1”,
-“Effect”: “Allow”,
-“Action”: [</p>
-<blockquote>
-<div><p>“logs:CreateLogStream”,
-“sns:Publish”,
-“logs:CreateLogGroup”,
-“logs:PutLogEvents”</p>
-</div></blockquote>
-<p>],
-“Resource”: [</p>
-<blockquote>
-<div><p>“arn:aws:logs:<em>:</em>:<em>”,
-“arn:aws:sns:</em>:<em>:</em>”</p>
-</div></blockquote>
-<p>]</p>
-</dd>
-</dl>
-<dl class="simple">
-<dt>}</dt><dd><p>]</p>
-</dd>
-</dl>
-<p>}</p>
-</div></blockquote>
-</dd>
-</dl>
-</li>
+<p>a) Crie uma policy com o json
+.. literalinclude:: version.json</p>
+<ol class="loweralpha simple" start="2">
 <li><p>Criar IAM role como serviço para o Lambda e colocar a politica nova.</p></li>
 </ol>
 <ul>
@@ -295,7 +251,6 @@
 <ul class="simple">
 <li><p>Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!</p></li>
 </ul>
-<p>Dessa forma, você pode ter as seguintes notificações em seu Telegram.</p>
 </div>
 </div>
 
@@ -305,6 +260,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="conhecimentoscloud.html" class="btn btn-neutral float-right" title="Conhecimentos Cloud" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="projetos.html" class="btn btn-neutral float-left" title="Projetos" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
     </div>
 
