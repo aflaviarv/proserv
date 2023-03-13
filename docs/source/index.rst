@@ -14,7 +14,7 @@ Neste repositório traremos todas tudo referente a organização e produção de
 =============================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Conteúdo:
 
    pages/intro
