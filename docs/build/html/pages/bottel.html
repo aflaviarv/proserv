@@ -247,7 +247,46 @@
 </li>
 <li><p>Agora é só testar o código usando um json de alarme:</p></li>
 </ul>
-<img alt="JSON de Alarme" src="../_images/alarm.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;AlarmName&quot;</span><span class="p">:</span> <span class="s2">&quot;teste-telegram&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;AlarmDescription&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+    <span class="s2">&quot;AWSAccountId&quot;</span><span class="p">:</span> <span class="s2">&quot;99999999999999&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;AlarmConfigurationUpdatedTimestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-03-06T17:06:31.446+0000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;NewStateValue&quot;</span><span class="p">:</span> <span class="s2">&quot;ALARM&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;NewStateReason&quot;</span><span class="p">:</span> <span class="s2">&quot;Threshold Crossed: 1 out of the last 1 datapoints [0.33574153327928674 (06/03/23 17:03:00)] was greater than the threshold (0.0) (minimum 1 datapoint for OK -&gt; ALARM transition).&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;StateChangeTime&quot;</span><span class="p">:</span> <span class="s2">&quot;2023-03-06T17:09:40.215+0000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Region&quot;</span><span class="p">:</span> <span class="s2">&quot;US East (Ohio)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;AlarmArn&quot;</span><span class="p">:</span> <span class="s2">&quot;arn:aws:cloudwatch:us-east-2:99999999999999:alarm:teste-telegram&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;OldStateValue&quot;</span><span class="p">:</span> <span class="s2">&quot;OK&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;AlarmDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Texto de exemplo de descrição&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;OKActions&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="s2">&quot;AlarmActions&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;arn:aws:sns:us-east-2:99999999999999:sns-telegram-teste&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;InsufficientDataActions&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="s2">&quot;Trigger&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;MetricName&quot;</span><span class="p">:</span> <span class="s2">&quot;CPUUtilization&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Namespace&quot;</span><span class="p">:</span> <span class="s2">&quot;AWS/EC2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;StatisticType&quot;</span><span class="p">:</span> <span class="s2">&quot;Statistic&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Statistic&quot;</span><span class="p">:</span> <span class="s2">&quot;AVERAGE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Unit&quot;</span><span class="p">:</span> <span class="n">null</span><span class="p">,</span>
+        <span class="s2">&quot;Dimensions&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;i-0b670cc48c15a9514&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;InstanceId&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;Period&quot;</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span>
+        <span class="s2">&quot;EvaluationPeriods&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;DatapointsToAlarm&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;ComparisonOperator&quot;</span><span class="p">:</span> <span class="s2">&quot;GreaterThanThreshold&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Threshold&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+        <span class="s2">&quot;TreatMissingData&quot;</span><span class="p">:</span> <span class="s2">&quot;missing&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;EvaluateLowSampleCountPercentile&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 <ul class="simple">
 <li><p>Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!</p></li>
 </ul>

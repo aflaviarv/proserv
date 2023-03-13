@@ -65,8 +65,7 @@ b) Criar IAM role como serviço para o Lambda e colocar a politica nova.
 	
 * Agora é só testar o código usando um json de alarme:
 
-.. image:: /images/alarm.png
-    :alt: JSON de Alarme
+.. literalinclude:: alarmes.json
 
 * Para funcionar precisa que no seu Alarme tenha o Actions apontado para o SNS que ativa o lambda!
 
