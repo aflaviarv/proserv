@@ -96,12 +96,3 @@ b) Criar IAM role como serviço para o Lambda e colocar a politica nova.
 
 Dessa forma, você pode ter as seguintes notificações em seu Telegram.
 
-.. image:: /images/primeiraformachat.png
-    :alt: Primeira Situação
-
-.. image:: /images/segundaformachat.png    
-    :alt: Segunda Situação
-
-.. image:: /images/terceiraformachat.png  
-    :alt: Terceira Situação 
-    
